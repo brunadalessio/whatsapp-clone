@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #D2DBDC;
+  margin: 0;
+  font-family: 'Segoe UI', Helvetica Neue, Helvetica, Lucida Grande, Arial;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header{
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.janela__app{
+  display: flex;
+  height: 100vh;
+  background-color: #EDEDED;
+}
+
+.sidebar{
+  width: 35%;
+  max-width: 415px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  border-right: 1px solid #DDD;
+}
+
+.header__avatar{
+  cursor: pointer;
+}
+
+.header__botoes{
+  display: flex;
+}
+
+.header__icone{
+  color: #919191;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: center;
+  cursor: pointer;
 }
