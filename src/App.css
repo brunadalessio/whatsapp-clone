@@ -48,3 +48,31 @@ header{
   align-items: center;
   cursor: pointer;
 }
+
+.buscar{
+  background-color: #F6F6F6;
+  border-bottom: 1px solid #EEE;
+  padding: 5px 15px;
+}
+
+.buscar__input{
+  background-color: #FFF;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.buscar__input input{
+  flex: 1;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin-left: 10px;
+}
+
+.buscar__icone{
+  color: #919191;
+  cursor: pointer;
+}

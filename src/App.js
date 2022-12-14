@@ -1,11 +1,16 @@
-import { Avatar } from '@mui/material';
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './App.css';
+import { Avatar } from '@mui/material';
 import DonutLargeIcon from '@mui/icons-material/DonutLarge';
 import ChatIcon from '@mui/icons-material/Chat';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
+import SearchIcon from '@mui/icons-material/Search';
+import ListaConversa from './Component/ListaConversa';
 
 function App() {
+  
+  const [listaConversa, setListaConversa] = useState([{}, {}, {}, {}]);
+
   return (
     <div className='janela__app'>
       <div className='sidebar'>
@@ -25,11 +30,17 @@ function App() {
           </header>
           
           <div className='buscar'>
-            ...   
+            <div className='buscar__input'>
+              <SearchIcon fontSize='small' className='buscar__icone'/>
+              <input type='search' placeholder='Procurar ou começar uma nova conversa'/>
+
+            </div>
           </div>
 
-          <div className='lista__amigos'>
-            ...
+          <div className='lista__conversas'>
+            {listaConversa.map((item, key)=>(
+              <ListaConversa key={key}/>
+            ))}
           </div>
       </div>
       <div className='conteudo__area'>
