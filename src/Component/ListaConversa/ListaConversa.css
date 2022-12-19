@@ -1,0 +1,58 @@
+.listaConversa{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    height: 70px;
+}
+
+.listaConversa:hover{
+    background-color: #F5F5F5;
+}
+
+.listaConversa__avatar{
+    margin-left: 15px;
+}
+
+.listaConversa__linhas{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid #EEE;
+    padding-right: 15px;
+    margin-left: 15px;
+    flex-wrap: wrap;
+    min-width: 0;
+}
+
+.listaConversa__linha{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.listaConversa__nome{
+    font-size: 17px;
+    color: #000;
+}
+
+.listaConversa__data{
+    font-size: 12px;
+    color: #999;
+}
+
+.listaConversa__ultimaMsg{
+    font-size: 14px;
+    color: #999;
+    display: flex;
+    width: 100%;
+}
+
+.listaConversa__ultimaMsg p{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0;
+}

@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
-import './ListaConversa.css';
+import './ChatIntro.css';
 
-class ListaConversa extends Component {
-    
+class ChatIntro extends Component {
     render() { 
         return ( 
             <div>
-                ...
+                teste
             </div>
          );
     }
 }
  
-export default ListaConversa;
+export default ChatIntro;

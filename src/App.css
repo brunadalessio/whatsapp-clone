@@ -76,3 +76,22 @@ header{
   color: #919191;
   cursor: pointer;
 }
+
+.lista__conversas{
+  flex: 1;
+  background-color: #FFF;
+  overflow-y: auto;
+}
+
+.lista__conversas::-webkit-scrollbar{
+  width: 6px;
+  height: 6px;
+}
+
+.lista__conversas::-webkit-scrollbar-thumb{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.conteudo__area{
+  
+}

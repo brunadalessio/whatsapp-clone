@@ -5,11 +5,12 @@ import DonutLargeIcon from '@mui/icons-material/DonutLarge';
 import ChatIcon from '@mui/icons-material/Chat';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import SearchIcon from '@mui/icons-material/Search';
-import ListaConversa from './Component/ListaConversa';
+import ListaConversa from './Component/ListaConversa/ListaConversa';
+import ChatIntro from './Component/ChatIntro/ChatIntro';
 
 function App() {
   
-  const [listaConversa, setListaConversa] = useState([{}, {}, {}, {}]);
+  const [listaConversa, setListaConversa] = useState([{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}]);
 
   return (
     <div className='janela__app'>
@@ -44,7 +45,7 @@ function App() {
           </div>
       </div>
       <div className='conteudo__area'>
-        ...
+        <ChatIntro/>
       </div>
     </div>
   );
