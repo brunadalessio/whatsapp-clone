@@ -40,7 +40,7 @@ header{
 }
 
 .header__icone{
-  color: #919191;
+  color: #54656F;
   width: 40px;
   height: 40px;
   border-radius: 20px;
@@ -51,13 +51,13 @@ header{
 }
 
 .buscar{
-  background-color: #F6F6F6;
+  background-color: #FFF;
   border-bottom: 1px solid #EEE;
   padding: 5px 15px;
 }
 
 .buscar__input{
-  background-color: #FFF;
+  background-color: #F0F2F5;
   height: 40px;
   border-radius: 20px;
   display: flex;
@@ -74,7 +74,7 @@ header{
 }
 
 .buscar__icone{
-  color: #919191;
+  color: #54656F;
   cursor: pointer;
 }
 
@@ -94,5 +94,5 @@ header{
 }
 
 .conteudo__area{
-  
+  flex: 1;
 }

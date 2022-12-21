@@ -1,0 +1,43 @@
+.chatIntro{
+    background-color: #F0F2F5;
+    /* background-color: #F8F9FA; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-bottom:6px solid #25D366;
+}
+
+.chatIntro img{
+    height: auto;
+}
+
+.chatIntro h1{
+    font-size: 32px;
+    color: #41525D;
+    font-weight: 200;
+    padding-top: 30px;
+    margin: 0;
+}
+
+.chatIntro h2{
+    font-size: 14px;
+    color: #667781;
+    font-weight: normal;
+    line-height: 20px;
+    text-align: center;
+}
+
+.chatIntro__auth{
+    position: absolute;
+    bottom: 40px;
+    color: #8696A0;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.chatIntro__cadeado{
+    padding-top: 13px;
+    padding-left: 10px;  
+}
