@@ -6,7 +6,7 @@ class ChatIntro extends Component {
     render() { 
         return ( 
             <div className='chatIntro'>
-                <img src='https://media.discordapp.net/attachments/736463094154526810/1054958746327068773/image.png' alt=''/>
+                <img src='https://media.discordapp.net/attachments/736463094154526810/1054958746327068773/image.png' alt='Imagem da Intro'/>
                 <h1>WhatsApp Web</h1>
                 <h2>Envie e receba mensagens sem precisar manter seu celular conectado à internet.
                 <br/>

@@ -9,6 +9,10 @@
     background-color: #F5F5F5;
 }
 
+.listaConversa.active{
+    background-color: #EBEBEB;
+}
+
 .listaConversa__avatar{
     margin-left: 15px;
 }
