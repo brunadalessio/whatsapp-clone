@@ -12,7 +12,7 @@ import ChatJanela from './Component/ChatJanela/ChatJanela';
 function App() {
   
   const [listaConversa, setListaConversa] = useState([
-    {chatId: 1, nome: 'Fulano', img:'https://www.w3schools.com/w3images/avatar2.png'},
+    {chatId: 1, nome: 'Fulano Exemplo', img:'https://www.w3schools.com/w3images/avatar2.png'},
     {chatId: 2, nome: 'Aline', img:'https://www.w3schools.com/w3images/avatar6.png'},
     {chatId: 3, nome: 'Gabriel', img:'https://www.w3schools.com/howto/img_avatar.png'},
     {chatId: 4, nome: 'Mãe', img:'https://www.w3schools.com/howto/img_avatar2.png'}
