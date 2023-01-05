@@ -27,7 +27,15 @@ class ChatJanela extends Component {
 
                 </div>
                 <div className='chatJanela__footer'>
+                    <div className='chatJanela__pre'>
 
+                    </div>
+                    <div className='chatJanela__inputarea'>
+                        
+                    </div>
+                    <div className='chatJanela__pos'>
+                    
+                    </div>
                 </div>
             </div>
          );
