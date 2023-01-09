@@ -3,6 +3,10 @@ import React, { Component } from 'react';
 import './ChatJanela.css'
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import SearchIcon from '@mui/icons-material/Search';
+import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon';
+// import SendIcon from '@mui/icons-material/Send';
+import AttachFileIcon from '@mui/icons-material/AttachFile';
+import MicIcon from '@mui/icons-material/Mic';
 
 class ChatJanela extends Component {
     render() { 
@@ -28,13 +32,20 @@ class ChatJanela extends Component {
                 </div>
                 <div className='chatJanela__footer'>
                     <div className='chatJanela__pre'>
-
+                        <div className='chatJanela__botao'>
+                            <InsertEmoticonIcon/>
+                        </div>
+                        <div className='chatJanela__botao'>
+                            <AttachFileIcon/>
+                        </div>
                     </div>
                     <div className='chatJanela__inputarea'>
-                        
+                        <input className='chatJanela__input' type='text' placeholder='Mensagem'/>
                     </div>
                     <div className='chatJanela__pos'>
-                    
+                        <div className='chatJanela__botao'>
+                            <MicIcon/>
+                        </div>
                     </div>
                 </div>
             </div>
