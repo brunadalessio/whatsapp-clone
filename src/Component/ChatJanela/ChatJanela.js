@@ -1,5 +1,6 @@
 import { Avatar } from '@mui/material';
 import React, { Component } from 'react';
+import EmojiPicker from 'emoji-picker-react';
 import './ChatJanela.css'
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import SearchIcon from '@mui/icons-material/Search';
@@ -10,6 +11,11 @@ import MicIcon from '@mui/icons-material/Mic';
 
 class ChatJanela extends Component {
     render() { 
+
+        const handleEmojiClick = () =>{
+
+        }
+
         return ( 
             <div className='chatJanela'>
                 <div className='chatJanela__header'>
@@ -29,6 +35,9 @@ class ChatJanela extends Component {
                 </div>
                 <div className='chatJanela__body'>
 
+                </div>
+                <div className='chatJanela__emojiarea'>
+                    <EmojiPicker onEmojiClick = {handleEmojiClick} searchDisabled skinTonesDisabled width="auto"/>
                 </div>
                 <div className='chatJanela__footer'>
                     <div className='chatJanela__pre'>

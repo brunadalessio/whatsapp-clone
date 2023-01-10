@@ -88,3 +88,11 @@
     margin: 0 15px;
     display: flex;
 }
+
+aside.EmojiPickerReact{
+    background: none;
+}
+
+.EmojiPickerReact li.epr-emoji-category>.epr-emoji-category-label{
+    background: none;
+}
