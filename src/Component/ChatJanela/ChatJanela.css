@@ -48,6 +48,8 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    overflow: hidden;
+    transition: all ease 0.3s;
 }
 
 .chatJanela__body{
@@ -89,6 +91,11 @@
     display: flex;
 }
 
+.chatJanela__emojiarea{
+    overflow-y: hidden;
+    transition: all ease 0.3s;
+}
+
 aside.EmojiPickerReact{
     background: none;
 }
@@ -96,3 +103,7 @@ aside.EmojiPickerReact{
 .EmojiPickerReact li.epr-emoji-category>.epr-emoji-category-label{
     background: none;
 }
+
+.EmojiPickerReact .Flex.FlexRow {
+    display: none;
+  }

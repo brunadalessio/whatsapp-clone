@@ -1,5 +1,5 @@
 import { Avatar } from '@mui/material';
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import EmojiPicker from 'emoji-picker-react';
 import './ChatJanela.css'
 import MoreVertIcon from '@mui/icons-material/MoreVert';
@@ -8,12 +8,21 @@ import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon';
 // import SendIcon from '@mui/icons-material/Send';
 import AttachFileIcon from '@mui/icons-material/AttachFile';
 import MicIcon from '@mui/icons-material/Mic';
+import CloseIcon from '@mui/icons-material/Close';
 
-class ChatJanela extends Component {
-    render() { 
+const ChatJanela = () => {
+        const [abrirEmoji, setAbrirEmoji] = useState(false);
 
-        const handleEmojiClick = () =>{
+        const handleClicarEmoji = () =>{
+            
+        }
 
+        const handleEmojiAbrir = () =>{
+            setAbrirEmoji(true);
+        }
+
+        const handleEmojiFechar = () =>{
+            setAbrirEmoji(false);
         }
 
         return ( 
@@ -36,14 +45,26 @@ class ChatJanela extends Component {
                 <div className='chatJanela__body'>
 
                 </div>
-                <div className='chatJanela__emojiarea'>
-                    <EmojiPicker onEmojiClick = {handleEmojiClick} searchDisabled skinTonesDisabled width="auto"/>
+                <div className='chatJanela__emojiarea' style={{height: abrirEmoji ? '200px' : '0px'}}>
+                    <EmojiPicker 
+                    onEmojiClick={handleClicarEmoji} 
+                    searchDisabled 
+                    skinTonesDisabled 
+                    width='auto' 
+                    height='200px'
+                    />
                 </div>
                 <div className='chatJanela__footer'>
                     <div className='chatJanela__pre'>
-                        <div className='chatJanela__botao'>
+
+                        <div className='chatJanela__botao' onClick={handleEmojiFechar} style={{width: abrirEmoji ? '40px' : '0px'}}>
+                            <CloseIcon/>
+                        </div>
+                        
+                        <div className='chatJanela__botao' onClick={handleEmojiAbrir}>
                             <InsertEmoticonIcon/>
                         </div>
+                        
                         <div className='chatJanela__botao'>
                             <AttachFileIcon/>
                         </div>
@@ -59,7 +80,7 @@ class ChatJanela extends Component {
                 </div>
             </div>
          );
-    }
+    
 }
  
 export default ChatJanela;
