@@ -5,16 +5,18 @@ import './ChatJanela.css'
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import SearchIcon from '@mui/icons-material/Search';
 import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon';
-// import SendIcon from '@mui/icons-material/Send';
+import SendIcon from '@mui/icons-material/Send';
 import AttachFileIcon from '@mui/icons-material/AttachFile';
 import MicIcon from '@mui/icons-material/Mic';
 import CloseIcon from '@mui/icons-material/Close';
 
 const ChatJanela = () => {
         const [abrirEmoji, setAbrirEmoji] = useState(false);
+        const [texto, setTexto] = useState('');
 
-        const handleClicarEmoji = () =>{
-            
+        const handleClicarEmoji = (e, emojiObject) =>{
+            setTexto(texto + emojiObject.emoji);
+            // console.log(emojiObject.emoji);
         }
 
         const handleEmojiAbrir = () =>{
@@ -23,6 +25,14 @@ const ChatJanela = () => {
 
         const handleEmojiFechar = () =>{
             setAbrirEmoji(false);
+        }
+
+        const handleClicarEnviar = () =>{
+
+        }
+
+        const handleClicarMic = () =>{
+
         }
 
         return ( 
@@ -62,7 +72,7 @@ const ChatJanela = () => {
                         </div>
                         
                         <div className='chatJanela__botao' onClick={handleEmojiAbrir}>
-                            <InsertEmoticonIcon/>
+                            <InsertEmoticonIcon style={{color: abrirEmoji ? '#009688' : ''}}/>
                         </div>
                         
                         <div className='chatJanela__botao'>
@@ -70,12 +80,25 @@ const ChatJanela = () => {
                         </div>
                     </div>
                     <div className='chatJanela__inputarea'>
-                        <input className='chatJanela__input' type='text' placeholder='Mensagem'/>
+                        <input 
+                        className='chatJanela__input' 
+                        type='text' 
+                        placeholder='Mensagem'
+                        value={texto}
+                        onChange={e=>setTexto(e.target.value)}
+                        />
                     </div>
                     <div className='chatJanela__pos'>
-                        <div className='chatJanela__botao'>
-                            <MicIcon/>
-                        </div>
+                        {texto !== '' && 
+                            <div className='chatJanela__botao' onClick={handleClicarEnviar}>
+                                <SendIcon/>
+                            </div>
+                        }
+                        {texto === '' && 
+                            <div className='chatJanela__botao' onClick={handleClicarMic}>
+                                <MicIcon/>
+                            </div>
+                        }
                     </div>
                 </div>
             </div>
